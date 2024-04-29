@@ -1,0 +1,20 @@
+/*
+ * Exported with nin10kit v1.8
+ * Invocation command was nin10kit --mode=3 --resize=8x4 alien2 alien2.png 
+ * Time-stamp: Wednesday 11/09/2022, 06:32:09
+ * 
+ * Image Information
+ * -----------------
+ * alien2.png 8@4
+ * 
+ * All bug reports / feature requests are to be filed here https://github.com/TricksterGuy/nin10kit/issues
+ */
+
+#include "alien2.h"
+
+const unsigned short alien2[32] =
+{
+	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x7afd,0x7854,0x7afd,0x7afd,0x0000,0x0000,
+	0x4210,0x394a,0x7fde,0x7fde,0x7fde,0x7fde,0x394a,0x4210,0x0000,0x4210,0x6631,0x6631,0x6631,0x6631,0x4210,0x0000
+};
+
