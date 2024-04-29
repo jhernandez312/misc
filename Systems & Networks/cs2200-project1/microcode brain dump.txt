@@ -1,0 +1,24 @@
+done: fetch, add, nand, jalr, 
+-------
+nand1: DrREG, LdA, RegSel[1] = 0, RegSel[0] = 1
+nand2: DrREG, LdB, RegSel[1] = 1, RegSel[0] = 0
+nand3: DrALU, WrREG, ALU[1] = 0, ALU[0] = 1
+
+sw1: RegSel = 01, DrREG, LdA
+sw2: DrOFF, LdB
+sw3: func = 00, DrALU, LdMAR
+sw4: RegSel = 00, DrREG, WrMEM
+------------
+RegSel[1] | RegSel[0]
+x: 	0    		0	(IR[27:24])
+y:	0		1	(IR[23:20])
+z:	1		0	(IR[3:0])
+---------
+addi1: RegSel= 01, DrREG, LdA
+addi2: 
+addi3:
+---------
+br1: DrPC, LdA, 
+br2: DrOFF, LdB
+br3: DrALU, 
+--------

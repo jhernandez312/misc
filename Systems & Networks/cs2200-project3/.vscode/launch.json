@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Rasin bran 2/OneDrive - Georgia Institute of Technology/Desktop/my record files v2/Classes/Spring 2023/CS 2200/2200 projects/cs2200-project3",
+      "program": "c:/Users/Rasin bran 2/OneDrive - Georgia Institute of Technology/Desktop/my record files v2/Classes/Spring 2023/CS 2200/2200 projects/cs2200-project3/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+CS 2200 Summer 2022
+Project 4
+
+Name: Jessica Hernandez
+GT Username: jhernandez312
+
+Problem 1B (FCFS Scheduler)
+----------
+
+CPU 1: ~68 seconds
+CPU 2: ~39 seconds
+CPU 4: ~36 seconds
+
+No, there isn't a linear relationship between the nubmer of CPUs and the total excecution time. The jump between 1 and 2 CPUs is much bigger than the jump between using 2 and 4 CPUs. This is because there are a limited amount of processes that are available for the CPUs to complete. With 4 CPUs, a lot of time is spent waiting for a process to become available again.
+
+Problem 2B (Round-Robin)
+----------
+800ms: ~317 seconds
+600ms: ~300 seconds
+400ms: ~291 seconds
+200ms: ~280 seconds
+
+Yes, there is a linear relationship between the total waiting time and timeslice length. As the timeslice increases, so does the waiting time. The shortest timeslice possible isn't the best choice in a real OS because there is usually overhead involved with context switching. This overhead can add up and be longer than the wait time of a longer timeslice. 
+
+Problem 3B (Preemptive Priority)
+----------
+The OS can mitigate starvation in priority scheduluers by adding an aging variable. If a process has been waiting for a long time in the queue, the age variable will take this waiting time into account. The OS sets a threshold and if the age of this process crosses this threshold, then the OS boosts its priority.
+
+Problem 4 (The Priority Inversion Problem)
+---------
+Since P1 depends on the window manager, this means that there are some processes that depend on each other.
+
+We can use priority inheritance to make sure that P1 still completes before any medium priority task even though it depends on a low priority process. To do this, we can give temporarily give the low priority process the same priority as P1 while P1 is not complete. Once P1 is complete, the low priority task is given its original low priority.
